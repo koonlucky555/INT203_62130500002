@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Website</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<style>
+    @import url(script.js);
+    @import url(style.css);
+</style>
+
+<body>
+    <div class="main min-h-screen">
+        <header>
+            <div class="riotbar-header bg-black h-20 flex justify-between items-center flex-row z-20 fixed w-full">
+                <!-- logo -->
+                <div class="riotbar-left-content p-0 flex justify-center ml-4">
+                    <div class="first-logo flex-shrink-0 flex items-center mx-7 ">
+                        <img class="block h-8 w-auto border-r-2 border-white border-opacity-80 pr-10"
+                            src="images/icon-riot.png" alt="riotgame">
+                    </div>
+                    <div class="second-logo flex-shrink-0 flex items-center"><a href="index.html">
+                            <img class="block h-10 w-auto" src="images/icon-riot2.png" alt="riot"></a>
+                    </div>
+
+
+                </div>
+                <!-- center navbar -->
+                <div class="riotbar-center-content w-auto flex justify-start mr-64">
+                    <!-- Game Info -->
+                    <div class="game-info dropbtn block mt-4 lg:inline-block lg:mt-0  hover:text-white border-black
+                    text-white text-xs font-medium uppercase font-bold hover:border-red-500
+                    mr-6  flex items-center gameInfo dropdown ">Game Info
+                        <i class="fa fa-caret-down"></i>
+                        <ul class="dropdown-content items-center hover:text-white bg-black -ml-10">
+                            <li class="uppercase py-4 hover:bg-white hover:bg-opacity-20 pl-8 pr-28" href="#">Agents
+                            </li>
+                            <li class="uppercase py-4 hover:bg-white hover:bg-opacity-20 pl-8 pr-28" href="#">Maps</li>
+                            <li class="uppercase py-4 hover:bg-white hover:bg-opacity-20 pl-8 pr-28" href="#">Asenal
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Media -->
+                    <div class="Media">
+                        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0  hover:text-white border-black
+                        text-white text-xs font-medium uppercase font-bold hover:border-red-500
+                        mr-6 tracking-wide flex items-center gameInfo">
+                            Media
+                        </a>
+                    </div>
+
+                    <!-- News -->
+                    <div class="News">
+                        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0  hover:text-white border-black
+                      text-white text-xs font-medium uppercase font-bold hover:border-red-500
+                      mr-6 tracking-wide flex items-center gameInfo">
+                            News
+                        </a>
+                    </div>
+
+                    <!-- Leaderboard -->
+                    <div class="leaderboard">
+                        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0  hover:text-white border-black
+                      text-white text-xs font-medium uppercase font-bold hover:border-red-500
+                      mr-6 tracking-wide flex items-center gameInfo">
+                            Leaderboards
+                        </a>
+                    </div>
+
+                    <!-- Support -->
+                    <div class="support dropdown">
+                        <div class="game-info dropbtn block mt-4 lg:inline-block lg:mt-0  hover:text-white border-black
+                        text-white text-xs font-medium uppercase font-bold hover:border-red-500
+                        mr-6  flex items-center gameInfo dropdown">Support
+                            <i class="fa fa-caret-down"></i>
+                            <ul class="dropdown-content items-center hover:text-white bg-black -ml-10 ">
+                                <li class="uppercase py-4 hover:bg-white hover:bg-opacity-20 pl-8 pr-12" href="#">Spec
+                                </li>
+                                <li class="uppercase py-4 hover:bg-white hover:bg-opacity-20 pl-8 pr-12" href="#">
+                                    Support</li>
+                                <li class="uppercase py-4 hover:bg-white hover:bg-opacity-20 pl-8 pr-12" href="#">
+                                    Community Code</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Our Socials -->
+                    <div class="socials dropdown">
+                        <div class="game-info dropbtn block mt-4 lg:inline-block lg:mt-0  hover:text-white border-black
+                        text-white text-xs font-medium uppercase font-bold hover:border-red-500
+                        mr-6  flex items-center gameInfo dropdown">Our Socials
+                            <i class="fa fa-caret-down"></i>
+                            <ul class="dropdown-content items-center hover:text-white bg-black -ml-10 ">
+                                <li class="uppercase py-4 hover:bg-white hover:bg-opacity-20 pl-8 pr-24" href="#">
+                                    Twitter</li>
+                                <li class="uppercase py-4 hover:bg-white hover:bg-opacity-20 pl-8 pr-24" href="#">
+                                    Youtube</li>
+                                <li class="uppercase py-4 hover:bg-white hover:bg-opacity-20 pl-8 pr-24" href="#">
+                                    Instagram</li>
+                                <li class="uppercase py-4 hover:bg-white hover:bg-opacity-20 pl-8 pr-24" href="#">
+                                    Facebook</li>
+                                <li class="uppercase py-4 hover:bg-white hover:bg-opacity-20 pl-8 pr-24" href="#">
+                                    Discord</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="riotbar-right-content flex justify-end ">
+                    <div class="lang flex items-center">
+                        <img class="block h-4 w-auto" src="images/iconmonstr-globe-1-240.png">
+                    </div>
+                    <div class="playnow">
+                        <a href="#" class="inline-block text-xs px-7 py-3 leading-none border w-32 h-11 bg-red-500 rounded text-white border-red-500 
+                      mt-4 lg:mt-0 tracking-wide font-medium flex items-center mx-8 uppercase">Play now</a>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- video Main -->
+        <section class="video section relative w-full h-screen flex items-center justify-center overflow-hidden">
+            <div class="flex flex-col justify-center w-full">
+                <div class="flex flex-col mt-72">
+                    <p class="font-medium  text-base text-center pb-8 opacity-90 z-10 text-white tracking-normal">A 5v5
+                        character-based tactical
+                        shooter</p>
+                    <h1 class="valoFont text-9xl text-center pb-20 opacity-90 z-10 text-white">vAlorant</h1>
+                    <div class="valorant-play -mt-96 z-10"><a class="transparent" href="#">
+                            <p><span class="bg"></span>
+                                <span class="base"></span>
+                                <span class="text">Play Valorant</span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="home-video absolute top-0 left-0 w-full z-0 mt-20">
+                <video id="myVideo" autoplay muted loop id="Valorant_intro">
+                    <source src="video/bg_valorant.mp4" type="video/mp4" style="z-index: 0;">
+                </video>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
