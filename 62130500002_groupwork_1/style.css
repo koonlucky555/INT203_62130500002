@@ -1,13 +1,25 @@
 @font-face {
     font-family: "valoFont";
     src: url("font/Valorant_Font.ttf");
+
 }
+ @font-face {
+    font-family: "tungstenBold";
+    src: url("font/Tungsten-Bold.ttf");
+ }
 
 .valoFont {
     font-family: "valoFont";
 }
 
+.tungsten{
+    font-family: "tungstenBold";
+    color: #ff4655;
+}
 
+.play-now-bg {
+    background-color: #ff4655;
+}
 .valorant-play {
     display: flex;
     height: 100vh;
@@ -144,7 +156,7 @@ div a:before {
     background: #ece8e1;
 }
 
-.gameInfo {
+.underline-navber {
     padding-left: 2em;
     padding-right: 2em;
     padding-top: 2.55em;
